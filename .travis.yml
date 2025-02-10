@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t hammadJafar/Docker -f Dockerfile.dev .
+  - docker build -t hammadjafar/docker -f Dockerfile.dev .
 
 script: 
-  - docker run -e Cl = true hammadJafar/Docker npm run test
+  - docker run -e Cl=true hammadjafar/docker npm run test
